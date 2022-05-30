@@ -1,0 +1,24 @@
+.sidebar-page {
+	display: flex;
+	--sidebar-width: 240px;
+}
+
+#sidebar {
+	background-color: black;
+	height: 100%;
+	width: var(--sidebar-width);
+	position: fixed;
+}
+
+.sidebar-page-body {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+#sidebar-page-content {
+	height: 100%;
+	width: 100%;
+	margin-left: var(--sidebar-width);
+	padding: var(--spacer-3);
+	background-color: var(--gray-300);
+}

@@ -1,0 +1,55 @@
+:root {
+	--header-spacer: 50px;
+}
+
+#sidebar {
+	margin-top: var(--header-spacer) !important;
+}
+
+#sidebar-page-content {
+	margin-top: var(--header-spacer) !important;
+}
+
+.nagoya-header {
+	width: 100%;
+	height: var(--header-spacer);
+	border-bottom: 2px solid var(--brand-color-2);
+	background-color: var(--light);
+	padding: var(--spacer-2);
+	position: fixed;
+	z-index: 100;
+}
+
+.nagoya-header-logo {
+	max-height:100%;
+	max-width:100%;
+}
+
+.icon-button {
+	border-radius: var(--border-radius-circle);
+	margin: var(--spacer-1);
+	box-shadow: var(--box-shadow);
+	padding: 7px;
+}
+
+.login-out-button {
+	border-radius: var(--rounded-pill);
+	box-shadow: var(--box-shadow);
+	margin: var(--spacer-1);
+}
+
+#notification-btn {
+	position: relative;
+}
+
+.notification-badge {
+	position: absolute !important;
+	margin-left: 58px;
+	margin-bottom: 25px;
+	border-radius: 4px;
+	width: 24px;
+}
+
+.badge-item {
+	text-align: center;
+}

@@ -1,0 +1,54 @@
+[#assign site_url = "/web/nagoya-theme-test"]
+
+[#assign login_en = "Login"]
+[#assign logout_en = "Logout"]
+[#assign login_jp = "ログイン"]
+[#assign logout_jp = "ログアウト"]
+
+[#switch themeDisplay.languageId]
+  [#case "en_US"]
+    [#assign login_text = login_en]
+		[#assign logout_text = "Logout"]
+    [#break]
+  [#case "ja_JP"]
+    [#assign login_text = login_jp]
+		[#assign logout_text = logout_jp]
+    [#break]
+	[#default]
+		[#assign login_text = "Login"]
+		[#assign logout_text = "Logout"]
+[/#switch]
+
+<div class="nagoya-header d-flex justify-content-between">
+	
+		<div id="secret" style="display: none">
+			[@liferay.user_personal_bar /]
+		</div>
+		<div>
+			<a href="${themeDisplay.getPortalURL()}${site_url}">
+				<img
+						 class="nagoya-header-logo"
+						 src=[resources:logo-scaled.jpeg]>	
+			</a>
+		</div>
+		<div class="d-flex justify-content-between align-items-center">
+			<a
+							type="button"
+							class="icon-button btn btn-secondary btn-sm"
+							href="${themeDisplay.getPortalURL()}${site_url}/search">
+				[@clay["icon"] symbol="search" color="white"/]	
+			</a>
+			<a 
+				 id=notification-btn
+				 type="button"
+				 class="icon-button btn btn-secondary btn-sm"
+				 href="${themeDisplay.getPortalURL()}${site_url}/manage?p_p_id=com_liferay_notifications_web_portlet_NotificationsPortlet&p_p_lifecycle=0">
+				[@clay["icon"] symbol="bell-on" color="white" /]	
+			</a>
+			<a type="button" class="btn btn-primary btn-sm login-out-button">
+				[@clay["icon"] symbol="sign-in" /]
+				${themeDisplay.isSignedIn()?then(logout_text, login_text)}
+			</a>
+	  </div>
+	
+</div>

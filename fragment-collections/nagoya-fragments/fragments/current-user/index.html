@@ -1,0 +1,6 @@
+[#assign user = themeDisplay.getUser()]
+<div class="current-user nav-link">
+	 [@clay["icon"] symbol="user" color="white"/]
+		${user.getLastName()?upperCase}
+		${user.getFirstName()}
+</div>
