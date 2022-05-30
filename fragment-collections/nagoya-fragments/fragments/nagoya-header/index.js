@@ -1,5 +1,5 @@
 function insertAfter(newNode, existingNode) {
-    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+  existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
 }
 
 const notificationButton = document.querySelector('#notification-btn');
@@ -13,12 +13,12 @@ const badge = secret.querySelector(".badge");
 badge.classList.add("notification-badge");
 
 insertAfter(badge, notificationButton);
- 
-const mainContent = document.querySelector('#main-content');
+
+const contentElement = document.querySelector('#content');
 
 const outputsize = () => {
-  fragmentElement.children[0].style.width = `${mainContent.offsetWidth}px`
+fragmentElement.children[0].style.width = `${contentElement.offsetWidth}px`
 }
 outputsize()
 
-new ResizeObserver(outputsize).observe(mainContent)
+new ResizeObserver(outputsize).observe(contentElement)
