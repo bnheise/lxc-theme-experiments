@@ -1,0 +1,95 @@
+{
+  "gray400Color": {
+    "cssVariableMapping": "gray-400",
+    "value": "#CDCED9"
+  },
+  "btnPrimaryHoverBackgroundColor": {
+    "name": "brandColor1",
+    "cssVariableMapping": "btn-primary-hover-background-color",
+    "value": "#348385"
+  },
+  "boxShadow": {
+    "cssVariableMapping": "box-shadow",
+    "value": "1px 1px 1px 1px rgb(0 0 0 / 70%)"
+  },
+  "gray300Color": {
+    "cssVariableMapping": "gray-300",
+    "value": "#E7E7ED"
+  },
+  "btnSecondaryBackgroundColor": {
+    "name": "brandColor2",
+    "cssVariableMapping": "btn-secondary-background-color",
+    "value": "#5EC8C8"
+  },
+  "btnPrimaryHoverColor": {
+    "name": "whiteColor",
+    "cssVariableMapping": "btn-primary-hover-color",
+    "value": "#fff"
+  },
+  "lightColor": {
+    "cssVariableMapping": "light",
+    "value": "#F4F6F6"
+  },
+  "btnPrimaryBackgroundColor": {
+    "name": "brandColor1",
+    "cssVariableMapping": "btn-primary-background-color",
+    "value": "#348385"
+  },
+  "btnSecondaryHoverBackgroundColor": {
+    "name": "brandColor2",
+    "cssVariableMapping": "btn-secondary-hover-background-color",
+    "value": "#5EC8C8"
+  },
+  "btnSecondaryBorderColor": {
+    "name": "brandColor2",
+    "cssVariableMapping": "btn-secondary-border-color",
+    "value": "#348385"
+  },
+  "brandColor2": {
+    "cssVariableMapping": "brand-color-2",
+    "value": "#5EC8C8"
+  },
+  "btnSecondaryHoverColor": {
+    "name": "whiteColor",
+    "cssVariableMapping": "btn-secondary-hover-color",
+    "value": "#fff"
+  },
+  "btnSecondaryColor": {
+    "name": "whiteColor",
+    "cssVariableMapping": "btn-secondary-color",
+    "value": "#fff"
+  },
+  "brandColor1": {
+    "cssVariableMapping": "brand-color-1",
+    "value": "#348385"
+  },
+  "btnSecondaryHoverBorderColor": {
+    "cssVariableMapping": "btn-secondary-hover-border-color",
+    "value": "transparent"
+  },
+  "boxShadowSm": {
+    "cssVariableMapping": "box-shadow-sm",
+    "value": "10px 5px 5px red"
+  },
+  "gray100Color": {
+    "cssVariableMapping": "gray-100",
+    "value": "#F7F8F9"
+  },
+  "boxShadowLg": {
+    "cssVariableMapping": "box-shadow-lg",
+    "value": "10px 5px 5px red"
+  },
+  "btnPrimaryBorderColor": {
+    "name": "brandColor1",
+    "cssVariableMapping": "btn-primary-border-color",
+    "value": "#348385"
+  },
+  "gray600Color": {
+    "cssVariableMapping": "gray-600",
+    "value": "#6B6C7E"
+  },
+  "gray800Color": {
+    "cssVariableMapping": "gray-800",
+    "value": "#393A4A"
+  }
+}
