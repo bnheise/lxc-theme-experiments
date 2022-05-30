@@ -1,0 +1,177 @@
+{
+  "pageElement" : {
+    "pageElements" : [ {
+      "definition" : {
+        "fragment" : {
+          "key" : "nagoya-header"
+        },
+        "fragmentConfig" : { },
+        "fragmentFields" : [ ],
+        "indexed" : true
+      },
+      "type" : "Fragment"
+    }, {
+      "definition" : {
+        "fragment" : {
+          "key" : "sidebar-page"
+        },
+        "fragmentConfig" : { },
+        "fragmentFields" : [ ],
+        "indexed" : true
+      },
+      "pageElements" : [ {
+        "pageElements" : [ {
+          "definition" : {
+            "fragment" : {
+              "key" : "current-user"
+            },
+            "fragmentConfig" : { },
+            "fragmentFields" : [ ],
+            "indexed" : true
+          },
+          "type" : "Fragment"
+        }, {
+          "definition" : {
+            "fragment" : {
+              "key" : "sidebar-section"
+            },
+            "fragmentConfig" : { },
+            "fragmentFields" : [ ],
+            "indexed" : true
+          },
+          "pageElements" : [ {
+            "pageElements" : [ {
+              "definition" : {
+                "fragment" : {
+                  "key" : "BASIC_COMPONENT-heading"
+                },
+                "fragmentConfig" : {
+                  "headingLevel" : "h5"
+                },
+                "fragmentFields" : [ {
+                  "id" : "element-text",
+                  "value" : {
+                    "fragmentLink" : { },
+                    "text" : {
+                      "value_i18n" : {
+                        "en_US" : "Language select"
+                      }
+                    }
+                  }
+                } ],
+                "indexed" : true
+              },
+              "type" : "Fragment"
+            }, {
+              "definition" : {
+                "fragmentStyle" : {
+                  "height" : "20px"
+                },
+                "widgetInstance" : {
+                  "widgetConfig" : { },
+                  "widgetName" : "com_liferay_site_navigation_language_web_portlet_SiteNavigationLanguagePortlet"
+                }
+              },
+              "type" : "Widget"
+            } ],
+            "type" : "FragmentDropZone"
+          } ],
+          "type" : "Fragment"
+        }, {
+          "definition" : {
+            "fragment" : {
+              "key" : "BASIC_COMPONENT-heading"
+            },
+            "fragmentConfig" : {
+              "headingLevel" : "h3"
+            },
+            "fragmentFields" : [ {
+              "id" : "element-text",
+              "value" : {
+                "fragmentLink" : { },
+                "text" : {
+                  "value_i18n" : {
+                    "en_US" : "Navigation",
+                    "ja_JP" : "ナビゲーション"
+                  }
+                }
+              }
+            } ],
+            "fragmentStyle" : {
+              "fontWeight" : "fontWeightLighter",
+              "marginBottom" : "3",
+              "marginLeft" : "3",
+              "marginTop" : "3",
+              "textColor" : "gray200Color"
+            },
+            "indexed" : true
+          },
+          "type" : "Fragment"
+        }, {
+          "definition" : {
+            "fragment" : {
+              "key" : "sidebar-section"
+            },
+            "fragmentConfig" : { },
+            "fragmentFields" : [ ],
+            "indexed" : true
+          },
+          "pageElements" : [ {
+            "pageElements" : [ {
+              "definition" : {
+                "fragment" : {
+                  "key" : "com.liferay.fragment.renderer.menu.display.internal.MenuDisplayFragmentRenderer"
+                },
+                "fragmentConfig" : {
+                  "displayStyle" : "stacked",
+                  "selectedItemColor" : "",
+                  "sublevels" : "-1",
+                  "hoveredItemColor" : "",
+                  "source" : ""
+                },
+                "fragmentFields" : [ ],
+                "fragmentStyle" : {
+                  "fontSize" : "fontSizeLg",
+                  "textColor" : "whiteColor",
+                  "width" : "70%"
+                },
+                "indexed" : true
+              },
+              "type" : "Fragment"
+            } ],
+            "type" : "FragmentDropZone"
+          } ],
+          "type" : "Fragment"
+        } ],
+        "type" : "FragmentDropZone"
+      }, {
+        "pageElements" : [ {
+          "definition" : {
+            "fragmentSettings" : {
+              "unallowedFragments" : [ ]
+            }
+          },
+          "type" : "DropZone"
+        } ],
+        "type" : "FragmentDropZone"
+      } ],
+      "type" : "Fragment"
+    } ],
+    "type" : "Root"
+  },
+  "settings" : {
+    "colorSchemeName" : "01",
+    "styleBook" : {
+      "key" : "nagoya-styles",
+      "name" : "Nagoya Styles"
+    },
+    "themeName" : "Classic",
+    "themeSettings" : {
+      "lfr-theme:regular:show-header" : "false",
+      "lfr-theme:regular:wrap-widget-page-content" : "false",
+      "lfr-theme:regular:show-header-search" : "false",
+      "lfr-theme:regular:show-footer" : "false"
+    }
+  },
+  "version" : 1.1
+}
