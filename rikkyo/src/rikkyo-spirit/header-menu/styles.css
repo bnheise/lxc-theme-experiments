@@ -1,0 +1,79 @@
+.menu-icon-btn {
+  background-color: var(--brand-color-1);
+  width: 50px;
+  height: 50px;
+  font-size: 8px;
+}
+
+.menu-icon-btn svg {
+  font-size: 26px;
+  margin-top: 4px;
+}
+
+.menu-icon-btn div {
+  color: white;
+  margin: 4px 0 0 0;
+  font-size: 8px;
+}
+
+.title-area h1 {
+  font-size: 28px;
+  font-family: var(--font-family-sans-serif);
+  text-transform: uppercase;
+  margin: 0;
+  padding: var(--spacer-2);
+}
+
+#rikkyo-header-collapse-menu .portlet {
+  margin-bottom: 0;
+}
+
+#rikkyo-header-collapse-menu .list-group {
+  margin-bottom: 0;
+}
+
+#rikkyo-header-collapse-menu ul {
+  margin-bottom: 0;
+}
+
+#rikkyo-header-collapse-menu .list-group-item {
+  background-color: var(--dark);
+  border-left: none;
+  border-right: none;
+  border-top: 1px solid var(--gray-dark);
+  border-bottom: 1px solid var(--gray-dark);
+  padding: var(--spacer-2) var(--spacer-2);
+}
+
+#rikkyo-header-collapse-menu .list-group-item:first-child {
+  border-top-left-radius: 0; 
+  border-top-right-radius: 0;
+}
+
+#rikkyo-header-collapse-menu .list-group-item:last-child {
+  border: none;
+  border-bottom-left-radius: 0; 
+  border-bottom-right-radius: 0;
+
+}
+
+#rikkyo-header-collapse-menu li > a {
+  color: white;
+}
+
+#rikkyo-header-collapse-menu a:hover {
+  text-decoration: none;
+}
+
+#rikkyo-header-collapse-menu .form-control {
+  font-size: inherit;
+  height: 30px;
+  border-radius: 0;
+  padding-left: var(--spacer-1);
+}
+
+#rikkyo-header-collapse-menu .input-group-inset-item-after {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  height: 30px;
+}

@@ -1,0 +1,48 @@
+<div class="shadow-sm">
+  <div class="header-menu d-flex justify-content-between border-bottom">
+    <div class="title-area">
+      <h1 data-lfr-editable-id="university-name" data-lfr-editable-type="text">
+        Rikkyo Spirit
+      </h1>
+    </div>
+    <div
+      id="collapse-menu-button"
+      class="menu-icon-btn d-flex flex-column justify-content-center align-items-center"
+      type="button"
+      data-toggle="collapse"
+      aria-expanded="false"
+      aria-controls="rikkyo-header-collapse-menu"
+      data-target="#rikkyo-header-collapse-menu"
+    >
+      <div id="menu-open-icon">
+        [@clay["icon"] symbol="align-justify" color="white" /]
+      </div>
+      <div id="menu-close-icon" class="d-none">
+        [@clay["icon"] symbol="times" color="white" /]
+      </div>
+      <lfr-editable id="menu-title" type="text" >メニュー</lfr-editable>
+    </div>
+  </div>
+  <div class="collapse" id="rikkyo-header-collapse-menu">
+    <lfr-drop-zone></lfr-drop-zone>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <lfr-widget-search-bar ></lfr-widget-search-bar>
+      </li>
+      <li class="list-group-item">
+        <a href="/web/rikkyo-spirit/inquiries">Inquiries</a>
+      </li>
+      <li class="list-group-item">
+        [#if themeDisplay.isSignedIn()]
+          [#assign text = languageUtil.get(locale, "logout")]
+          [#assign href = "/c/portal/logout"]
+        [#else]
+          [#assign text = languageUtil.get(locale, "login")]
+          [#assign href = "/c/portal/login?p_l_id=${layout.getPlid()}"]
+        [/#if]
+        <a href="${href}">${text?capitalize}</a>
+      </li>
+    </ul>
+  </div>
+  <lfr-widget-nav id="rikkyoMainNav"></lfr-widget-nav>
+</div>
