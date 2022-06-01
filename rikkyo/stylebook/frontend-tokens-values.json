@@ -1,0 +1,10 @@
+{
+  "fontFamilySansSerif": {
+    "cssVariableMapping": "font-family-sans-serif",
+    "value": "Oswald, sans-serif"
+  },
+  "brandColor1": {
+    "cssVariableMapping": "brand-color-1",
+    "value": "#8942bd"
+  }
+}
